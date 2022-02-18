@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --ft-light: 'Lexend Deca', sans-serif;
+    --ft-bold: 'Big Shoulders Display', cursive;
+
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraph */
+    --color-very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--color-very-light-gray);
+    font-family: var(--ft-light);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 65%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+    background-color: var(--color-dark-cyan);
+    padding: 1em 3em;
+}
+article p {
+    line-height: 250%;
+}
+
+.btn {
+    background-color: var(--color-very-light-gray);
+    text-align: center;
+    color: var(--color-bright-orange);
+    width: 65%;
+    border-radius: 30px;
+    padding: 1em 0.2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.suv .btn {
+    color: var(--color-dark-cyan);
+}
+.luxury .btn {
+    color: var(--color-very-dark-cyan);
+}
+
+.sedan {
+    background-color: var(--color-bright-orange);
+    border-radius: 12px 0 0 12px;
+}
+
+.luxury {
+    background-color: var(--color-very-dark-cyan);
+    border-radius: 0 12px 12px 0;
+}
+
+article img {
+    width: 60px;
+}
+
+
+h2 {
+    font-family: var(--ft-bold);
+    text-transform: uppercase;
+    color: var(--color-very-light-gray);
+    font-size: 2.5em;
+}
+
+p {
+    color: var(--color-transparent-white);
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        height: 100vh;
+    }
+    .grid-menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 85%;
+        height: 90vh;
+    }
+
+    h2 { 
+        font-size: 1.6em;
+
+    }
+
+    article p {
+        font-size: 0.79rem;
+    }
+
+    .sedan {
+        border-radius: 12px 12px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 12px 12px;
+    }
+}
