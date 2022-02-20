@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --clr-one: hsl(193, 38%, 86%);
+    --clr-two: hsl(150, 100%, 66%);
+    --clr-three: hsl(217, 19%, 38%);
+    --clr-four: hsl(217, 19%, 24%);
+    --clr-bg: hsl(220, 22%, 16%);
+
+    --font-primary: 'Manrope', sans-serif;
+    --font-size: 28px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size);
+    background-color: var(--clr-bg);
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--clr-four);
+    max-width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5em 2em 2em 2em;
+    position: relative;
+}
+
+.advice-id {
+    color: var(--clr-two);
+    font-size: 14px;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.quote {
+    padding: 1.2em 0em;
+    color: var(--clr-one);
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+img  {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    padding: 0.5em;
+    background-color: var(--clr-two);
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: 0.2s;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--clr-two);
+    transition: 0.5s;
+    transform: translate(-50%, 50%) rotate(90deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 50vw;
+        padding: 1.5em 1em 2em 1em;
+    }
+    .quote {
+        font-size: 20px;
+    }
+}
