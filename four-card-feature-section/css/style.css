@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --ff-primary: 'Poppins', sans-serif;
+
+  --clr-1: hsl(180, 62%, 55%);   /* cyan */
+  --clr-2: hsl(0, 78%, 62%);     /* red */
+  --clr-3: hsl(34, 97%, 64%);    /* orange */
+  --clr-4: hsl(212, 86%, 64%);   /* blue */
+
+  --clr-5: hsl(234, 12%, 34%);   /* very dark blue */
+  --clr-6: hsl(229, 6%, 66%);    /* grayish blue */
+  --clr-7: hsl(0, 0%, 98%);      /* very light gray */
+
+  --fs-nav-headers: 24px;
+
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+  --shadow-3:
+    0 -1px 3px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 10%)),
+    0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 10%)),
+    0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 14%)),
+    0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 15%)),
+    0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 17%));
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 15px;
+  font-weight: 200;
+  background-color: var(--clr-7);;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+  width: min(calc(100vw - 5em), 1100px);
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 90vw
+  }
+
+  .card_clr_4 { margin-bottom: 20px; }
+}
+
+.card {
+  width: min(calc(100vw - 8em), 300px);
+  height: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: var(--shadow-3);
+  position: relative;
+}
+
+.card:hover {
+  transition: 0.3s;
+  border-top-width: 6px;
+}
+
+.card_clr_1 { border-top: 4px solid var(--clr-1); }
+.card_clr_2 { border-top: 4px solid var(--clr-2); }
+.card_clr_3 { border-top: 4px solid var(--clr-3); }
+.card_clr_4 { border-top: 4px solid var(--clr-4); }
+
+.card h1 {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--clr-5);
+}
+
+.card p {
+  margin-top: 10px;
+  color: var(--clr-6);
+  line-height: 1.5em;
+}
+
+.card img {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}

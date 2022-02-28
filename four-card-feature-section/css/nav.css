@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5vh;
+  text-align: center;
+}
+
+nav > section {
+  width: 500px;
+}
+
+nav h1,h2 {
+  font-size: var(--fs-nav-headers);
+}
+
+nav h2 {
+  font-weight: 200;
+  color: var(--clr-6);
+}
+
+nav h1 {
+  font-weight: 600;
+  color: var(--clr-5);
+  margin-top: 10px;
+}
+
+nav p {
+  color: var(--clr-6);
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+  nav > section {
+    width: 50vh;
+  }
+
+  nav  p {
+    width: 300px;
+    margin: 20px auto 0 auto;
+    /* background-color: red; */
+  }
+}
