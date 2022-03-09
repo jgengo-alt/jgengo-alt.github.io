@@ -24,7 +24,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 15px;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0 0 0;
 }
 
 li {
@@ -44,6 +44,14 @@ li a:hover {
 
 header {
   border-top: 10px solid #4e7cb8
+}
+
+section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -69,16 +77,27 @@ header {
 }
 
 .card__bt-pink {
-border-top: 5px solid pink;
+  border-top: 5px solid pink;
 }
 
-section {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  flex-wrap: wrap;
+.sep {
+  height: 4px;
+  width: 50px;
+  background-color: #4e7cb8;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;;
 }
+
+.sep-blue {
+  background-color: #4e7cb8;
+}
+
+.sep-pink {
+  background-color: pink;
+}
+
 .py-2 {
   padding: 0 2em;
 }
