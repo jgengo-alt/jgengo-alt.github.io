@@ -6,7 +6,6 @@
 }
 
 body {
-  padding: 2em;
   font-family: var(--ff-primary);
   font-size: 16px;
   line-height: 1.5;
@@ -20,18 +19,67 @@ a {
   color: #1a73e8;
 }
 
-h1 {
+h2 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
-}
-
-h1:not(:first-child) {
-  margin-top: 20px;
+  text-align: center;
+  padding: 0.5em 0;
 }
 
 li {
   font-family: var(--ff-secondary);
-  padding: 0.2em 0 0 1em;
+  padding: 0.2em 0 0 0;
+  position: relative;
+}
+
+li a {
+  position: absolute;
+  right: 0;
+  padding: 0em 0.7em;
+}
+li a:hover {
+  background-color: rgba(97, 153, 181, 0.1)
+}
+
+header {
+  border-top: 10px solid #4e7cb8
+}
+
+.container {
+  display: flex;
+  padding: 0.5em 2em;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card {
+  padding: 0em 1.5em 2em 1.5em;
+  box-shadow: 0px 5px 10px 3px rgba(60, 52, 77, 0.2);
+  min-width: 400px;
+  border-radius: 5px;
+}
+
+.card__bt-blue {
+  border-top: 5px solid #4e7cb8
+}
+
+.card__bt-pink {
+border-top: 5px solid pink;
+}
+
+section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.py-2 {
+  padding: 0 2em;
 }
 
