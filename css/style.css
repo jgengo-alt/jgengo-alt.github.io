@@ -19,16 +19,20 @@ a {
   color: #1a73e8;
 }
 
+
+
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
   text-align: center;
   padding: 0.5em 0 0 0;
+  font-family: var(--ff-primary);
 }
 
 li {
   font-family: var(--ff-secondary);
+  font-size: 15px;
   padding: 0.2em 0 0 0;
   position: relative;
 }
@@ -68,7 +72,7 @@ section {
 .card {
   padding: 0em 1.5em 2em 1.5em;
   box-shadow: 0px 5px 10px 3px rgba(60, 52, 77, 0.2);
-  min-width: 400px;
+  min-width: 250px;
   border-radius: 5px;
 }
 
@@ -81,7 +85,7 @@ section {
 }
 
 .sep {
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #4e7cb8;
   border-radius: 5px;
