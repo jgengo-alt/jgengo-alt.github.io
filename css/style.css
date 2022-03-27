@@ -84,6 +84,10 @@ section {
   border-top: 5px solid pink;
 }
 
+.card__bt-yellow {
+  border-top: 5px solid #FFDD03;
+}
+
 .sep {
   height: 2px;
   width: 50px;
@@ -100,6 +104,10 @@ section {
 
 .sep-pink {
   background-color: pink;
+}
+
+.sep-yellow {
+  background-color: #FFDD03;
 }
 
 .py-2 {
